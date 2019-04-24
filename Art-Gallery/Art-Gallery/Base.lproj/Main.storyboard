@@ -43,10 +43,13 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="wiG-q3-3Uv"/>
+                    <connections>
+                        <outlet property="galleryTableView" destination="QBL-AU-dx7" id="1s9-mS-zQb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1058" y="664"/>
+            <point key="canvasLocation" x="1471" y="643"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Qhj-dV-J18">

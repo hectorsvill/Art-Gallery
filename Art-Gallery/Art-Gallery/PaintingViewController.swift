@@ -12,11 +12,10 @@ class PaintingViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
     
-
+	@IBOutlet var galleryTableView: UITableView!
+	
     /*
     // MARK: - Navigation
 
