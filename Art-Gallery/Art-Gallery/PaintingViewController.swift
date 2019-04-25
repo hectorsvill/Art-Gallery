@@ -34,7 +34,7 @@ extension PaintingViewController: UITableViewDataSource {
 	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 		let cell = galleryTableView.dequeueReusableCell(withIdentifier: "PaintingCell", for: indexPath)
 		
-		cell.textLabel?.text = "\(indexPath.row)"
+//		cell.textLabel?.text = "\(indexPath.row)"
 		return cell
 	}
 	
