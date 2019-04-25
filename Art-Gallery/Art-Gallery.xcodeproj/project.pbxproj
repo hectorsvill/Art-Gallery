@@ -16,6 +16,7 @@
 		E8C8B245227115CC00F72576 /* Painting.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C8B244227115CC00F72576 /* Painting.swift */; };
 		E8C8B2472271163100F72576 /* PaintingTableViewCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C8B2462271163100F72576 /* PaintingTableViewCellDelegate.swift */; };
 		E8C8B2492271164300F72576 /* PaintingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C8B2482271164300F72576 /* PaintingModel.swift */; };
+		E8C8B24B22712A1400F72576 /* PaintingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C8B24A22712A1300F72576 /* PaintingController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		E8C8B244227115CC00F72576 /* Painting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Painting.swift; sourceTree = "<group>"; };
 		E8C8B2462271163100F72576 /* PaintingTableViewCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaintingTableViewCellDelegate.swift; sourceTree = "<group>"; };
 		E8C8B2482271164300F72576 /* PaintingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaintingModel.swift; sourceTree = "<group>"; };
+		E8C8B24A22712A1300F72576 /* PaintingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaintingController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,10 +64,11 @@
 		E8C8B22D22710C1E00F72576 /* Art-Gallery */ = {
 			isa = PBXGroup;
 			children = (
+				E8C8B244227115CC00F72576 /* Painting.swift */,
+				E8C8B24A22712A1300F72576 /* PaintingController.swift */,
+				E8C8B2462271163100F72576 /* PaintingTableViewCellDelegate.swift */,
 				E8C8B24022710EE100F72576 /* PaintingViewController.swift */,
 				E8C8B24222710F4D00F72576 /* PaintingTableViewCell.swift */,
-				E8C8B244227115CC00F72576 /* Painting.swift */,
-				E8C8B2462271163100F72576 /* PaintingTableViewCellDelegate.swift */,
 				E8C8B2482271164300F72576 /* PaintingModel.swift */,
 				E8C8B23222710C1E00F72576 /* Main.storyboard */,
 				E8C8B22E22710C1E00F72576 /* AppDelegate.swift */,
@@ -151,6 +154,7 @@
 				E8C8B2492271164300F72576 /* PaintingModel.swift in Sources */,
 				E8C8B22F22710C1E00F72576 /* AppDelegate.swift in Sources */,
 				E8C8B24322710F4D00F72576 /* PaintingTableViewCell.swift in Sources */,
+				E8C8B24B22712A1400F72576 /* PaintingController.swift in Sources */,
 				E8C8B245227115CC00F72576 /* Painting.swift in Sources */,
 				E8C8B2472271163100F72576 /* PaintingTableViewCellDelegate.swift in Sources */,
 			);
