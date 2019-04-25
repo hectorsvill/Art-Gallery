@@ -9,15 +9,14 @@
 import UIKit
 
 class PaintingTableViewCell: UITableViewCell {
-
-	//var painting: Painting?
+	@IBAction func tappedLikedButton(_ sender: Any) {
+		
+		print("Like")
+	}
 	
 	
 	@IBOutlet var paitingImageView: UIImageView!
 	
+	weak var delegate: PaintingTableViewCellDelegate?
 	
-	@IBAction func likeButtonPressed(_ sender: Any) {
-		print("Like it/ Unlike it")
-	
-	}
 }
