@@ -15,7 +15,7 @@ class PaintingTableViewCell: UITableViewCell {
 
 //		use delegate here to toogle like
 		delegate?.tappedLikeButton(on: self)
-		print("here")
+		print("tappedLikedBUtton")
 	}
 	
 	func updateLikeButton() {
@@ -28,6 +28,7 @@ class PaintingTableViewCell: UITableViewCell {
 	@IBOutlet var likeButton: UIButton!
 	
 	weak var delegate: PaintingTableViewCellDelegate?
+	var location: Int?
 	
 	var painting: Painting? {
 		didSet {

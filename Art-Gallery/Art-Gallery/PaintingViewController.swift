@@ -34,20 +34,25 @@ extension PaintingViewController: UITableViewDataSource {
 		let painting = controller.paintings[indexPath.row]
 
 		paintingCell.painting = painting
-		
-		//		paintingCell.paitingImageView.image = control.image
-//		paintingCell.likeButton.titleLabel?.text =
-		
+		paintingCell.location = indexPath.row
 		paintingCell.delegate = self
+		
 		return paintingCell
 	}
 	
+	func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+		let p = controller.paintings[indexPath.row]
+		print(p.isLiked)
+	}
 	
 }
 
 extension PaintingViewController: PaintingTableViewCellDelegate {
 	func tappedLikeButton(on cell: PaintingTableViewCell) {
-		guard let painting = cell.painting else { return }
-		print(painting.image)
+//		guard let painting = cell.painting else { return }
+		let location = cell.location!
+		controller.paintings[location].isLiked.toggle()
+		print("vc")
+		galleryTableView.reloadData()
 	}
 }
