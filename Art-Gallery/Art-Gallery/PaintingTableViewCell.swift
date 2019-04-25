@@ -9,7 +9,6 @@
 import UIKit
 
 class PaintingTableViewCell: UITableViewCell {
-	
 	@IBAction func tappedLikedButton(_ sender: Any) {
 		delegate?.tappedLikeButton(on: self)
 		updateLikeButton()
@@ -20,7 +19,6 @@ class PaintingTableViewCell: UITableViewCell {
 		let like = painting.isLiked ? "Like" : "Unlike"
 		likeButton.setTitle(like, for: .normal)
 		paintingImageView.image = painting.image
-		
 	}
 	
 	@IBOutlet var paintingImageView: UIImageView!

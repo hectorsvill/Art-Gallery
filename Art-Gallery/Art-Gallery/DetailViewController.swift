@@ -9,11 +9,11 @@
 import UIKit
 
 class DetailViewController: UIViewController {
-
     override func viewDidLoad() {
         super.viewDidLoad()
 		setPainting()
     }
+
 	private func setPainting() {
 		guard let p = painting else { return }
 		paintingImageView?.image = p.image
@@ -26,5 +26,4 @@ class DetailViewController: UIViewController {
 			setPainting()
 		}
 	}
-
 }

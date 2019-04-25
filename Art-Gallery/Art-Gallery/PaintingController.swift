@@ -9,7 +9,6 @@
 import UIKit
 
 class PaintingController {
-	
 	init() {
 		for i in 1...12 {
 			guard let image = UIImage(named: "Image\(i)") else { return }
@@ -17,6 +16,5 @@ class PaintingController {
 			paintings.append(p)
 		}
 	}
-	
 	var paintings: [Painting] = []
 }
