@@ -25,7 +25,6 @@ class PaintingViewController: UIViewController {
 			guard let dVC = segue.destination as? DetailViewController,
 			let cell = sender as? PaintingTableViewCell else { return }
 			dVC.painting = cell.painting
-			
 		}
 	}
 }
@@ -46,15 +45,9 @@ extension PaintingViewController: UITableViewDataSource {
 		paintingCell.painting = painting
 		paintingCell.location = indexPath.row
 		paintingCell.delegate = self
-		
+	
 		return paintingCell
 	}
-	
-//	func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//		let p = controller.paintings[indexPath.row]
-//		print(p.isLiked)
-//	}
-	
 }
 
 extension PaintingViewController: PaintingTableViewCellDelegate {
