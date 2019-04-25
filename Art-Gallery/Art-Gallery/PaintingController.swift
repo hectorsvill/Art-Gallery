@@ -12,7 +12,9 @@ class PaintingController {
 	
 	init() {
 		for i in 1...12 {
-			print(i)
+			guard let image = UIImage(named: "Image\(i)") else { return }
+			let p = Painting(image: image)
+			paintings.append(p)
 		}
 	}
 	

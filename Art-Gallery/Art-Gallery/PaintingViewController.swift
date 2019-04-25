@@ -28,13 +28,13 @@ extension PaintingViewController: UITableViewDelegate {
 
 extension PaintingViewController: UITableViewDataSource {
 	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-		return 10
+		return controller.paintings.count
 	}
 	
 	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 		let cell = galleryTableView.dequeueReusableCell(withIdentifier: "PaintingCell", for: indexPath)
 		
-		cell.textLabel?.text = "1"
+		cell.textLabel?.text = "\(indexPath.row)"
 		return cell
 	}
 	
