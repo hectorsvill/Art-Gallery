@@ -10,10 +10,7 @@ import UIKit
 
 class PaintingTableViewCell: UITableViewCell {
 	
-	
 	@IBAction func tappedLikedButton(_ sender: Any) {
-
-//		use delegate here to toogle like
 		delegate?.tappedLikeButton(on: self)
 		updateLikeButton()
 		print("tappedLikedBUtton")

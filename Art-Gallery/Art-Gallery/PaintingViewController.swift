@@ -16,7 +16,7 @@ class PaintingViewController: UIViewController {
 		galleryTableView.delegate = self
 		galleryTableView.dataSource = self
     }
-	
+
     let controller = PaintingController()
 	@IBOutlet var galleryTableView: UITableView!
 }
@@ -35,7 +35,6 @@ extension PaintingViewController: UITableViewDataSource {
 		let painting = controller.paintings[indexPath.row]
 
 		paintingCell.painting = painting
-		
 		paintingCell.location = indexPath.row
 		paintingCell.delegate = self
 		
