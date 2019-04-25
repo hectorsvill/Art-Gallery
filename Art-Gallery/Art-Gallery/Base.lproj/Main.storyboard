@@ -42,6 +42,9 @@
                                                             <rect key="frame" x="0.0" y="249" width="334" height="29.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <state key="normal" title="Unlike"/>
+                                                            <connections>
+                                                                <action selector="tappedLikedButton:" destination="wpH-3O-d9D" eventType="touchUpInside" id="PgI-mh-tgG"/>
+                                                            </connections>
                                                         </button>
                                                     </subviews>
                                                 </stackView>

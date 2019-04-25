@@ -11,6 +11,10 @@ import UIKit
 class PaintingTableViewCell: UITableViewCell {
 	
 	
+	@IBAction func tappedLikedButton(_ sender: Any) {
+		print("like")
+	}
+	
 	@IBOutlet var paitingImageView: UIImageView!
 	@IBOutlet var likeButton: UIButton!
 	
