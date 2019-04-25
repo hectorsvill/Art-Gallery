@@ -38,11 +38,16 @@ extension PaintingViewController: UITableViewDataSource {
 		//		paintingCell.paitingImageView.image = control.image
 //		paintingCell.likeButton.titleLabel?.text =
 		
-//		paintingCell.delegate = self
+		paintingCell.delegate = self
 		return paintingCell
 	}
 	
 	
 }
 
-
+extension PaintingViewController: PaintingTableViewCellDelegate {
+	func tappedLikeButton(on cell: PaintingTableViewCell) {
+		guard let painting = cell.painting else { return }
+		print(painting.image)
+	}
+}

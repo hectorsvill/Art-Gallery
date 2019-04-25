@@ -15,6 +15,7 @@ class PaintingTableViewCell: UITableViewCell {
 
 //		use delegate here to toogle like
 		delegate?.tappedLikeButton(on: self)
+		print("here")
 	}
 	
 	func updateLikeButton() {
