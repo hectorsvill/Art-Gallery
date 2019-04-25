@@ -15,13 +15,14 @@ class PaintingTableViewCell: UITableViewCell {
 
 //		use delegate here to toogle like
 		delegate?.tappedLikeButton(on: self)
-		print("tappedLikedBUtton")
 		updateLikeButton()
+		print("tappedLikedBUtton")
 	}
 	
-	func updateLikeButton() {
+	private func updateLikeButton() {
 		guard let painting = painting else { return }
-		likeButton.titleLabel?.text = painting.isLiked ? "Like" : "Unlike"
+		let like = painting.isLiked ? "Like" : "Unlike"
+		likeButton.setTitle(like, for: .normal)
 		paintingImageView.image = painting.image
 	}
 	
