@@ -42,10 +42,10 @@ extension PaintingViewController: UITableViewDataSource {
 		return paintingCell
 	}
 	
-	func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-		let p = controller.paintings[indexPath.row]
-		print(p.isLiked)
-	}
+//	func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//		let p = controller.paintings[indexPath.row]
+//		print(p.isLiked)
+//	}
 	
 }
 
