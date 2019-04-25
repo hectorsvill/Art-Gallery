@@ -31,8 +31,9 @@ extension PaintingViewController: UITableViewDataSource {
 	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 		let cell = galleryTableView.dequeueReusableCell(withIdentifier: "PaintingCell", for: indexPath)
 		guard let paintingCell = cell as? PaintingTableViewCell else { return cell }
-		paintingCell.paitingImageView.image = controller.paintings[indexPath.row].image
-		
+		let control = controller.paintings[indexPath.row]
+		paintingCell.paitingImageView.image = control.image
+		paintingCell.likeButton.titleLabel?.text = control.isLiked ? "Like" : "Unlike"
 		return paintingCell
 	}
 	
