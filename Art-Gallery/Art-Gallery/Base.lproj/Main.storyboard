@@ -107,7 +107,7 @@
                         <viewLayoutGuide key="safeArea" id="LIm-2d-VWX"/>
                     </view>
                     <connections>
-                        <outlet property="paitingImageView" destination="JZ4-7j-qxD" id="7Ob-3t-e4c"/>
+                        <outlet property="paintingImageView" destination="JZ4-7j-qxD" id="7Ob-3t-e4c"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TYG-jR-VmL" userLabel="First Responder" sceneMemberID="firstResponder"/>

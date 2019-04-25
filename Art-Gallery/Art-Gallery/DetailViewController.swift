@@ -12,21 +12,19 @@ class DetailViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-		
+		setPainting()
     }
+	private func setPainting() {
+		guard let p = painting else { return }
+		paintingImageView?.image = p.image
+	}
     
-	@IBOutlet var paitingImageView: UIImageView!
-	var painting: Painting?
+	@IBOutlet var paintingImageView: UIImageView!
 	
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+	var painting: Painting? {
+		didSet {
+			setPainting()
+		}
+	}
 
 }

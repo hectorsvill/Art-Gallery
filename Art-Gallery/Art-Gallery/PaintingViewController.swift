@@ -22,9 +22,9 @@ class PaintingViewController: UIViewController {
 	
 	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 		if segue.identifier == "DetailSeg" {
-			guard let dc = segue.destination as? DetailViewController,
+			guard let dVC = segue.destination as? DetailViewController,
 			let cell = sender as? PaintingTableViewCell else { return }
-			dc.painting = cell.painting
+			dVC.painting = cell.painting
 			
 		}
 	}
