@@ -12,6 +12,7 @@ class PaintingViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 		title = "Lambda Gallery"
+		navigationController?.navigationBar.prefersLargeTitles = true
 		galleryTableView.delegate = self
 		galleryTableView.dataSource = self
     }
