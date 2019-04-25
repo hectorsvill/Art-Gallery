@@ -31,10 +31,14 @@ extension PaintingViewController: UITableViewDataSource {
 	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 		let cell = galleryTableView.dequeueReusableCell(withIdentifier: "PaintingCell", for: indexPath)
 		guard let paintingCell = cell as? PaintingTableViewCell else { return cell }
-		let control = controller.paintings[indexPath.row]
-		paintingCell.paitingImageView.image = control.image
-		paintingCell.likeButton.titleLabel?.text = control.isLiked ? "Like" : "Unlike"
-		paintingCell.delegate = self
+		let painting = controller.paintings[indexPath.row]
+
+		paintingCell.painting = painting
+		
+		//		paintingCell.paitingImageView.image = control.image
+//		paintingCell.likeButton.titleLabel?.text = control.isLiked ? "Like" : "Unlike"
+		
+//		paintingCell.delegate = self
 		return paintingCell
 	}
 	

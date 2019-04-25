@@ -21,5 +21,5 @@ class PaintingTableViewCell: UITableViewCell {
 	@IBOutlet var likeButton: UIButton!
 	
 	weak var delegate: PaintingTableViewCellDelegate?
-	
+	var painting: Painting?
 }
