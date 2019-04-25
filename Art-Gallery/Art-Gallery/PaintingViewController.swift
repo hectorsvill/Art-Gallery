@@ -19,6 +19,15 @@ class PaintingViewController: UIViewController {
 
     let controller = PaintingController()
 	@IBOutlet var galleryTableView: UITableView!
+	
+	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+		if segue.identifier == "DetailSeg" {
+			guard let dc = segue.destination as? DetailViewController,
+			let cell = sender as? PaintingTableViewCell else { return }
+			dc.painting = cell.painting
+			
+		}
+	}
 }
 
 extension PaintingViewController: UITableViewDelegate {
