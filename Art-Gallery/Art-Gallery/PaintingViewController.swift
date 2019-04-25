@@ -34,6 +34,7 @@ extension PaintingViewController: UITableViewDataSource {
 		let control = controller.paintings[indexPath.row]
 		paintingCell.paitingImageView.image = control.image
 		paintingCell.likeButton.titleLabel?.text = control.isLiked ? "Like" : "Unlike"
+		paintingCell.delegate = self
 		return paintingCell
 	}
 	

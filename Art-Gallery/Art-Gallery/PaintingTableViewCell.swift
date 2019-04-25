@@ -14,6 +14,7 @@ class PaintingTableViewCell: UITableViewCell {
 	@IBAction func tappedLikedButton(_ sender: Any) {
 //		self.likeButton.titleLabel?.text = "one"
 //		use delegate here to toogle like
+		delegate?.tappedLikeButton(on: self)
 	}
 	
 	@IBOutlet var paitingImageView: UIImageView!
