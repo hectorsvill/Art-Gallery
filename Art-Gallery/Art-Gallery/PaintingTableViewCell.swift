@@ -20,9 +20,10 @@ class PaintingTableViewCell: UITableViewCell {
 	func updateLikeButton() {
 		guard let painting = painting else { return }
 		likeButton.titleLabel?.text = painting.isLiked ? "Like" : "Unlike"
+		paintingImageView.image = painting.image
 	}
 	
-	@IBOutlet var paitingImageView: UIImageView!
+	@IBOutlet var paintingImageView: UIImageView!
 	@IBOutlet var likeButton: UIButton!
 	
 	weak var delegate: PaintingTableViewCellDelegate?

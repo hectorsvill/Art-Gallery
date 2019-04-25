@@ -60,7 +60,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="likeButton" destination="hVZ-v5-OnB" id="MBV-dL-cpB"/>
-                                            <outlet property="paitingImageView" destination="pDf-SG-Q7a" id="2jU-PB-4q4"/>
+                                            <outlet property="paintingImageView" destination="pDf-SG-Q7a" id="2jU-PB-4q4"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
