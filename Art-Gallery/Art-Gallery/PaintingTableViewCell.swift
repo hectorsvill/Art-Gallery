@@ -19,7 +19,7 @@ class PaintingTableViewCell: UITableViewCell {
 	
 	func updateLikeButton() {
 		guard let painting = painting else { return }
-		likeButton.titleLabel?.text = control.isLiked ? "Like" : "Unlike"
+		likeButton.titleLabel?.text = painting.isLiked ? "Like" : "Unlike"
 	}
 	
 	@IBOutlet var paitingImageView: UIImageView!
