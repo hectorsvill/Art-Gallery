@@ -61,6 +61,7 @@
                                         <connections>
                                             <outlet property="likeButton" destination="hVZ-v5-OnB" id="MBV-dL-cpB"/>
                                             <outlet property="paintingImageView" destination="pDf-SG-Q7a" id="2jU-PB-4q4"/>
+                                            <segue destination="rRX-xl-Qpx" kind="show" identifier="DetailSeg" id="F5v-bC-rqY"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -83,6 +84,35 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1105.7971014492755" y="663.61607142857144"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="XAF-VQ-syH">
+            <objects>
+                <viewController id="rRX-xl-Qpx" customClass="DetailViewController" customModule="Art_Gallery" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DA0-fC-fE2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JZ4-7j-qxD">
+                                <rect key="frame" x="20" y="98" width="374" height="589"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="LIm-2d-VWX" firstAttribute="trailing" secondItem="JZ4-7j-qxD" secondAttribute="trailing" constant="20" id="JcP-H0-EOM"/>
+                            <constraint firstItem="LIm-2d-VWX" firstAttribute="bottom" secondItem="JZ4-7j-qxD" secondAttribute="bottom" constant="175" id="MDk-c6-pBT"/>
+                            <constraint firstItem="JZ4-7j-qxD" firstAttribute="top" secondItem="LIm-2d-VWX" secondAttribute="top" constant="10" id="ecz-9O-tGY"/>
+                            <constraint firstItem="JZ4-7j-qxD" firstAttribute="leading" secondItem="LIm-2d-VWX" secondAttribute="leading" constant="20" id="udi-ia-iC7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="LIm-2d-VWX"/>
+                    </view>
+                    <connections>
+                        <outlet property="paitingImageView" destination="JZ4-7j-qxD" id="7Ob-3t-e4c"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TYG-jR-VmL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1973.913043478261" y="663.61607142857144"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Qhj-dV-J18">
