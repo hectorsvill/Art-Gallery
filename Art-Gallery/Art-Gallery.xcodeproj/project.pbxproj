@@ -66,8 +66,8 @@
 			children = (
 				E8C8B244227115CC00F72576 /* Painting.swift */,
 				E8C8B24A22712A1300F72576 /* PaintingController.swift */,
-				E8C8B2462271163100F72576 /* PaintingTableViewCellDelegate.swift */,
 				E8C8B24022710EE100F72576 /* PaintingViewController.swift */,
+				E8C8B2462271163100F72576 /* PaintingTableViewCellDelegate.swift */,
 				E8C8B24222710F4D00F72576 /* PaintingTableViewCell.swift */,
 				E8C8B2482271164300F72576 /* PaintingModel.swift */,
 				E8C8B23222710C1E00F72576 /* Main.storyboard */,

@@ -9,10 +9,14 @@
 import UIKit
 
 class PaintingController {
+	
+	init() {
+		for i in 1...12 {
+			print(i)
+		}
+	}
+	
 	var paintings: [Painting] = []
-	
-	
-	
 }
 
 

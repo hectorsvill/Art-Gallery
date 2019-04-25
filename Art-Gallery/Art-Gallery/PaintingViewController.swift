@@ -9,13 +9,34 @@
 import UIKit
 
 class PaintingViewController: UIViewController {
-
     override func viewDidLoad() {
         super.viewDidLoad()
+		title = "Lambda Gallery"
+		galleryTableView.delegate = self
+		galleryTableView.dataSource = self
+		
     }
 	
     let controller = PaintingController()
 	@IBOutlet var galleryTableView: UITableView!
 	
 
+}
+
+extension PaintingViewController: UITableViewDelegate {
+}
+
+extension PaintingViewController: UITableViewDataSource {
+	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+		return 10
+	}
+	
+	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+		let cell = galleryTableView.dequeueReusableCell(withIdentifier: "PaintingCell", for: indexPath)
+		
+		cell.textLabel?.text = "1"
+		return cell
+	}
+	
+	
 }

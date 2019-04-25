@@ -17,7 +17,7 @@ extension PaintingModel: UITableViewDataSource {
 	
 	func numberOfSections(in tableView: UITableView) -> Int {
 		
-		weak var tableView: UITableView?
+//		weak var tableView: UITableView?
 		return 0
 	}
 	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -32,9 +32,9 @@ extension PaintingModel: UITableViewDataSource {
 	
 }
 
-extension PaintingModel: PaintingTableViewCellDelegate {
-	func tappedLikeButton(on cell: PaintingTableViewCell){
-		cell.painting?.isLiked.toggle()
-	}
-}
+//extension PaintingModel: PaintingTableViewCellDelegate {
+//	func tappedLikeButton(on cell: PaintingTableViewCell){
+//		cell.painting?.isLiked.toggle()
+//	}
+//}
 
