@@ -50,10 +50,9 @@ extension PaintingViewController: UITableViewDataSource {
 
 extension PaintingViewController: PaintingTableViewCellDelegate {
 	func tappedLikeButton(on cell: PaintingTableViewCell) {
-//		guard let painting = cell.painting else { return }
-		let location = cell.location!
-		controller.paintings[location].isLiked.toggle()
-		print("vc")
-		galleryTableView.reloadData()
+		if let location = cell.location {
+			controller.paintings[location].isLiked.toggle()
+			galleryTableView.reloadData()
+		}
 	}
 }
